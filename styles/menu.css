@@ -1,0 +1,178 @@
+body {
+    box-sizing: content-box;
+    /*box-sizing: border-box;              */
+    background: rgb(220, 226, 165);
+}
+
+
+/*-------------------------------------------------- section grid container  */
+
+
+/*
+.grid-container {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    padding: 5px 10px;
+}
+*/
+
+.background {
+    background: #008080;
+    margin: 5px;
+    border: 2px solid #02313a;
+    border-radius: 5px;
+}
+
+header,
+footer,
+main {
+    color: #c9c508;
+    /*    margin-top: 50px;*/
+}
+
+
+/*-------------------------------------------------- nav container  */
+
+ul.menu {
+    display: flex;
+    /*flex-basis: content;    ??????????????*/
+    justify-content: center;
+    align-self: center;
+}
+
+.menu,
+.submenu {
+    list-style: none;
+    margin: 3px;
+    border: 1px solid red;
+    padding-left: 10px;
+}
+
+.menu>li>p {
+    margin: 0px 50px 0px 50px;
+}
+
+.submenu>li>p {
+    margin: 0px;
+    padding: 0px 0px 0px 50px;
+}
+
+ul.menu>li>p:hover {
+    cursor: pointer;
+    color: white;
+}
+
+ul.submenu {
+    display: none;
+}
+
+ul.menu>li:hover>ul.submenu {
+    display: block;
+}
+
+ul.submenu>li>p:hover {
+    cursor: pointer;
+    color: rgb(235, 233, 110);
+}
+
+
+/*-------------------------------------------------- main container  */
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 5px 10px;
+}
+
+.grid_1 {
+    grid-column: 1/7;
+    grid-row: 1/5;
+}
+
+.grid_2 {
+    grid-column: 1/7;
+    grid-row: 5/6;
+}
+
+.grid_3 {
+    grid-column: 7/11;
+    grid-row: 1/4;
+}
+
+.grid_4 {
+    grid-column: 7/11;
+    grid-row: 4/6;
+}
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4 {
+    border: 1px solid red;
+    margin: 1px;
+    padding: 20px;
+}
+
+
+/*
+nav>.menu>li {
+    float: left;
+    position: relative;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.menu>li>p {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+ul.menu>li>p:hover {
+    background-color: black;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid red;
+}
+
+ul.submenu>li {
+    display: block;
+}
+
+ul.submenu>li>p {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+ul.menu>li:hover>ul.submenu {
+    display: block;
+}
+*/
+
+
+/*ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+*/

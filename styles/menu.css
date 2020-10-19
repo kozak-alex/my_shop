@@ -18,7 +18,7 @@ body {
 */
 
 .background {
-    background: #008080;
+    background: #f3cd65;
     margin: 5px;
     border: 2px solid #02313a;
     border-radius: 5px;
@@ -27,7 +27,7 @@ body {
 header,
 footer,
 main {
-    color: #c9c508;
+    color: #302f06;
     /*    margin-top: 50px;*/
 }
 
@@ -94,6 +94,8 @@ ul.submenu>li>p:hover {
 .grid_2 {
     grid-column: 1/7;
     grid-row: 5/6;
+    justify-content: center;
+    align-content: center;
 }
 
 .grid_3 {
@@ -113,6 +115,14 @@ ul.submenu>li>p:hover {
     border: 1px solid red;
     margin: 1px;
     padding: 20px;
+}
+
+.grid_2>img:hover {
+    cursor: pointer;
+}
+
+input[type=radio]:hover {
+    cursor: pointer;
 }
 
 

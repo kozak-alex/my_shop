@@ -2,6 +2,9 @@ $(() => {
     const check_opt = $('input[name="option"]');
     check_opt.eq(0).prop('checked', true);
     $('#price').text('1999 грн');
+
+    $('.foto_2').css('opacity', 0.4);
+    $('.foto_3').css('opacity', 0.4);
     //   let percent = $('#inpperc').val();
     //   let pric = $('#price').val();
     //   let people = $('#inppeop').val();
@@ -26,6 +29,27 @@ $(() => {
             $('#set_size_1').html('Простирадло 225&times;240.');
             $('#set_size_2').html('Півковдра 2&times;155&times;215');
         }
+    });
+
+    $('.foto_1').on('click', () => {
+        $('.foto_1').css('opacity', 1);
+        $('.foto_2').css('opacity', 0.4);
+        $('.foto_3').css('opacity', 0.4);
+        $('#foto_big').attr('src', 'images/st033_01.jpg');
+    });
+
+    $('.foto_2').on('click', () => {
+        $('.foto_1').css('opacity', 0.4);
+        $('.foto_2').css('opacity', 1);
+        $('.foto_3').css('opacity', 0.4);
+        $('#foto_big').attr('src', 'images/st033_02.jpg');
+    });
+
+    $('.foto_3').on('click', () => {
+        $('.foto_1').css('opacity', 0.4);
+        $('.foto_2').css('opacity', 0.4);
+        $('.foto_3').css('opacity', 1);
+        $('#foto_big').attr('src', 'images/st033_03.jpg');
     });
     /*
         $("#type_1").on('click', () => {

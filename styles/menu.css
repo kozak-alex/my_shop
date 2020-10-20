@@ -73,7 +73,7 @@ ul.menu>li:hover>ul.submenu {
 
 ul.submenu>li>p:hover {
     cursor: pointer;
-    color: rgb(235, 233, 110);
+    color: rgb(197, 28, 28);
 }
 
 
@@ -135,4 +135,9 @@ ul.submenu>li>p:hover {
 
 input[type=radio]:hover {
     cursor: pointer;
+}
+
+#set_name {
+    color: #02313a;
+    font-weight: bold;
 }

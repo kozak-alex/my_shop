@@ -18,7 +18,7 @@ body {
 */
 
 .background {
-    background: #f3cd65;
+    background: #ecd8a1;
     margin: 5px;
     border: 2px solid #02313a;
     border-radius: 5px;
@@ -117,72 +117,22 @@ ul.submenu>li>p:hover {
     padding: 20px;
 }
 
-.grid_2>img:hover {
+.fotos_small>img:hover {
     cursor: pointer;
+}
+
+.fotos_small {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+}
+
+#foto_1,
+#foto_2,
+#foto_3 {
+    margin: 2px;
 }
 
 input[type=radio]:hover {
     cursor: pointer;
 }
-
-
-/*
-nav>.menu>li {
-    float: left;
-    position: relative;
-}
-
-ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-ul.menu>li>p {
-    display: block;
-    padding: 10px;
-    color: white;
-    background-color: red;
-    text-decoration: none;
-}
-
-ul.menu>li>p:hover {
-    background-color: black;
-}
-
-ul.submenu {
-    display: none;
-    position: absolute;
-    width: 120px;
-    top: 37px;
-    left: 0;
-    background-color: white;
-    border: 1px solid red;
-}
-
-ul.submenu>li {
-    display: block;
-}
-
-ul.submenu>li>p {
-    display: block;
-    padding: 10px;
-    color: white;
-    background-color: red;
-    text-decoration: none;
-}
-
-ul.menu>li:hover>ul.submenu {
-    display: block;
-}
-*/
-
-
-/*ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-    float: none;
-}
-*/

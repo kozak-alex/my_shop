@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> My first site </title>
+    <title>First shop </title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1" />
     <link rel="stylesheet" href="styles/menu.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 <body>
     <section id="grid-container">
         <header class="head-container background">
-            <h2>HEADER &trade;</h2>
+            <h2>Svit dlya TEBE</h2>
         </header>
         <nav class="nav-container background">
             <ul class="menu">
@@ -34,13 +34,13 @@
                     <p>Poducts</p>
 
                     <ul class="submenu">
-                        <li>1111
+                        <li class="type_set">
                             <p>ST033</p>
                         </li>
-                        <li>2222
-                            <p>Link4</p>
+                        <li class="type_set">
+                            <p>SE016</p>
                         </li>
-                        <li>3333
+                        <li class="type_set">
                             <p>Link5</p>
                         </li>
                     </ul>
@@ -62,9 +62,9 @@
             </div>
             <div class="grid_2">
                 <div class="fotos_small">
-                    <img id="foto_1" src="images/st033_01.jpg" alt="st033" height="50px">
-                    <img id="foto_2" src="images/st033_02.jpg" alt="st033" height="50px">
-                    <img id="foto_3" src="images/st033_03.jpg" alt="st033" height="50px">
+                    <img id="foto_1" src="images/st033_01.jpg" alt="bedding set" height="50px">
+                    <img id="foto_2" src="images/st033_02.jpg" alt="bedding set" height="50px">
+                    <img id="foto_3" src="images/st033_03.jpg" alt="bedding set" height="50px">
                 </div>
             </div>
             <div class="grid_3">
@@ -72,8 +72,8 @@
                     Модель
                     <spap id="set_name">ST033</span>
                 </p>
-                <p>
-                    Колір простирадла - ніжний персик.<br> Півковдра та наволочки - синій.
+                <p id="color_bedding_set">
+                    Колір простирадла - ніжний персик.<br> Півковдри та наволочки - синій.
                 </p>
                 <p>
                     Склад 100% бавовна, тканина &laquo;страйп сатин&raquo; .
@@ -86,16 +86,24 @@
             </div>
             <div class="grid_4">
                 <p>
-                    <input type="radio" name="option" value="1"> Півтораспальний комплект <br>
-                    <input type="radio" name="option" value="2"> Двоспальний комплект <br>
-                    <input type="radio" name="option" value="3"> Євро комплект <br>
-                    <input type="radio" name="option" value="4"> Сімейний комплект <br>
+                    <input type="radio" name="option" value="onehalf"> Півтораспальний комплект <br>
+                    <input type="radio" name="option" value="two"> Двоспальний комплект <br>
+                    <input type="radio" name="option" value="euro"> Євро комплект <br>
+                    <input type="radio" name="option" value="family"> Сімейний комплект <br>
                 </p>
-                <p id="price">1999 грн</p>
+                <p> Вартість комплекту постільної білизни: <span id="price">1999</span> грн</p>
             </div>
         </main>
         <aside class="aside1-container background">
             <p>a-side1</p>
+            <ul id="ul_side">
+                <li class="li_side">1111
+                </li>
+                <li class="li_side">2222
+                </li>
+                <li class="li_side">3333
+                </li>
+            </ul>
         </aside>
         <aside class="aside2-container background">
             <p>a-side2</p>

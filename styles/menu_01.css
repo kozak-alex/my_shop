@@ -1,6 +1,4 @@
 body {
-    max-width: 1200px;
-    margin: auto;
     box-sizing: content-box;
     /*box-sizing: border-box;              */
     background: rgb(220, 226, 165);
@@ -115,12 +113,8 @@ ul.submenu>li>p:hover {
 .grid_3,
 .grid_4 {
     border: 1px solid red;
-    /*    margin: auto;*/
+    margin: 1px;
     padding: 20px;
-}
-
-#foto_big {
-    width: 100%;
 }
 
 .fotos_small>img:hover {
@@ -137,15 +131,10 @@ ul.submenu>li>p:hover {
 #foto_2,
 #foto_3 {
     margin: 2px;
-    height: 5vmax;
 }
 
 input[type=radio]:hover {
     cursor: pointer;
-}
-
-.inp_set {
-    font-size: 16pt;
 }
 
 #set_name {
@@ -160,36 +149,3 @@ input[type=radio]:hover {
     color: red;
 }
 */
-
-@media (min-width: 600px) and (max-width: 800px) {
-    .inp_set {
-        font-size: 14pt;
-    }
-}
-
-@media (max-width: 600px) {
-    .grid_1 {
-        grid-column: 1/10;
-        grid-row: 1/2;
-    }
-    .grid_2 {
-        grid-column: 10/11;
-        grid-row: 1/2;
-        justify-content: center;
-        align-content: center;
-    }
-    .grid_3 {
-        grid-column: 1/11;
-        grid-row: 2/3;
-    }
-    .grid_4 {
-        grid-column: 1/11;
-        grid-row: 3/4;
-    }
-    .fotos_small {
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}

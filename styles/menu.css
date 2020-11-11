@@ -86,7 +86,6 @@ ul.submenu>li>p:hover {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 1fr);
     padding: 5px 10px;
-    margin: ;
 }
 
 .grid_1 {
